@@ -6,7 +6,7 @@ An educational color guessing game to help students understand how to read color
 
 ## Authors
 
-- Kaitlyn Rice (https://www.github.com/kaitrice)
+- [@kaitrice](https://www.github.com/kaitrice)
 
 
 ## Tech Stack
