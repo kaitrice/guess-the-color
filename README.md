@@ -39,7 +39,7 @@ This project is used for the following class(es):
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://github.com/kaitrice/guess-the-color/blob/main/files/Report.pdf)
 
 
 
