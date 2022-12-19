@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess That Color</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/jquery.js"></script>
+
+    
+  </head>
+  <body>
+      <h1>Guess That<br><span id="colorDisplay"></span></h1>
+
+      <div class="settingDisplay">
+        <span>
+          <button id="easy" class="difficulty">Easy</button>
+          <button id="medium" class="difficulty">Medium</button>
+          <button id="hard" class="difficulty">Hard</button>
+        </span>
+
+        <span id="score"></span>
+
+        <span>
+          <button id="rbg" class="game">RGB</button>
+          <button id="hex" class="game">Hex</button>
+        </span>
+
+        <button id="reset">New Colors</button>
+      </div>
+
+      
+
+      <div id="container">
+        
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      
+      <div id="description">
+        <div id="explain">
+          <h3>What are color codes?</h3>
+          <p>RGB color model represents red, green, blue primary colors of light added together in various ways to reproduce every color. Each value ranges from 0 to 255. <br><br>Represented as rgb(red, green, blue)<br>Example: rgb(0, 0, 0) would represent black <br>Example: rgb(255, 255, 255) would represent white</p>
+          <p> HEX color model is another notation where each of the three decimal values are converted into a two-digit hexadecimal code, resulting in a 6-digit hexadecimal code. <br><br>Example: #000000 would represent black <br>Example: #ffffff would represent white</p>
+        </div>
+  
+        <div id="instruct">
+          <h3>How to play:</h3>
+          <p>Based on the color value above, select the color you think is being represented. Depending on what level you choose, there are either 3, 6, or 9 points availble each round. Each incorrect answer will decresase the availble points by 1 and the square will disappear.</p>
+        </div>
+      </div>
+
+      <footer>
+        <script src="game.js" type="text/javascript"></script>
+      </footer>
+
+  </body>
+</html>

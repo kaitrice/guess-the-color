@@ -1,0 +1,228 @@
+body {
+    background-color: #2d2d2d;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #09cb30;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+.selected {
+    color: #fff;
+    background: #09cb30;
+}
+
+#colorDisplay {
+    font-size: 55px;
+    letter-spacing: .2em;
+}
+
+.settingDisplay {
+    background-color: #000;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+#bar0, #bar1, #bar2 {
+    display: none;
+}
+
+#score {
+    display: inline-block;
+    width: 20%;
+    font-weight: bold;
+}
+
+#container {
+    margin: 20px auto;
+}
+
+#description {
+    display: inline-flex;
+    justify-content: center;
+    margin: auto 12em;
+    max-width: 80%;
+}
+
+#description h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #09cb30;
+}
+
+#description p {
+    color: #fff;
+}
+
+#explain {
+    max-width: 20%;
+    margin: auto 50px; 
+    text-align: center;
+}
+
+#instruct {
+    max-width: 20%; 
+    margin: 0 50px;
+}
+
+.square {
+    width: 29%;
+    background: #09cb30;
+    padding-bottom: 30%;
+    float: left;
+    margin: 2%;
+    transition: ease-in-out background 0.15s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+
+    text-align: center;
+    font-weight: bolder;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: none;
+    height: 100%;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: inherit;
+    transition: all .4s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1, #colorDisplay {
+        font-size: 32px;
+    }
+    #container {
+        max-width: 100%;
+    }
+    .square {
+        font-size: 100%;
+    }
+    #description {
+        display: table;
+        max-width: 100%;
+        margin: auto;
+    }
+    #explain {
+        max-width: 80%;
+        margin: auto 10%; 
+    }
+    #instruct {
+        max-width: 80%;
+        margin: auto 10%; 
+    }    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #container {
+        max-width: 65%;
+    }
+    .square {
+        font-size: 115%;
+    }
+    #description {
+        display: inline-block;
+        max-width: 100%;
+        margin: auto;
+    }
+    #explain {
+        max-width: 100%;
+        margin: auto 10%; 
+    }
+    #instruct {
+        max-width: 100%;
+        margin: auto 10%; 
+    }        
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #container {
+        max-width: 45%;
+    }
+    .square {
+        font-size: 125%;
+    }
+    #description {
+        display: inline-flex;
+        max-width: 100%;
+        margin: auto;
+    }
+    #explain {
+        max-width: 30%;
+        margin: 10px; 
+    }
+    #instruct {
+        max-width: 30%; 
+        margin: 10px;
+    }    
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #container {
+        max-width: 40%;
+    }
+    .square {
+        font-size: 150%;
+    }
+    #description {
+        display: inline-flex;
+        max-width: 80%;
+        margin: auto 12em;
+    }
+    #explain {
+        max-width: 30%;
+        margin: 10px; 
+    }
+    #instruct {
+        max-width: 30%; 
+        margin: 10px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    #container {
+        max-width: 50%;
+    }
+    .square {
+        font-size: 175%;
+    }
+    #description {
+        display: inline-flex;
+        max-width: 80%;
+        margin: auto 12em;
+    }
+    #explain {
+        max-width: 30%;
+        margin: 15px; 
+        text-align: center;
+    }
+    #instruct {
+        max-width: 30%; 
+        margin: 15px;
+    }
+  }
+
