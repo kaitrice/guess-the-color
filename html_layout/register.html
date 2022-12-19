@@ -1,0 +1,53 @@
+<div class="container">
+  <main class="w-50 m-auto">
+    <form  action="php/verify.php" method="post" id="register">
+      <h1 class="display-6 my-3 fw-normal">Create an account</h1>
+      <fieldset>
+        <legend>
+          Your Information
+        </legend>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="f_name" placeholder="John" required>
+          <label for="f_name">First Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="l_name" placeholder="Doe" required>
+          <label for="l_name">Last Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="email" placeholder="user@domain.com" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="location" placeholder="Somewhere" required>
+          <label for="location">Location</label>
+        </div>
+        </fieldset>
+
+      <fieldset class="mt-3">
+        <legend>
+          Login Information
+        </legend>
+        <div class="form-floating">
+          <input type="username" class="form-control" id="user" placeholder="Username" required>
+          <label for="user">Username</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="user_pass" placeholder="Password" required>
+          <label for="user_pass">Password</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="user_pass_var" placeholder="Password" required>
+          <label for="user_pass_var">Password Verification</label>
+        </div>
+      </fieldset>
+
+      <div class="my-3">
+        Already have an account? <a class="link-secondary" href="login.php">Login</a>
+      </div>
+      <div class="text-center">
+        <button class="w-50 btn btn-lg btn-primary" type="submit">Create Account</button>
+      </div>
+    </form>
+  </main>
+</div>
